@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,8 +18,20 @@
 	<script src="scripts/before-form.js"></script>
 	<script src="scripts/before-modal.js"></script>
 	<script src="scripts/before-hero.js"></script>
+
+    <style>
+        h5 {
+          color: #000; /* Black text color */
+        }
+    
+        a {
+          color: #007bff; /* Blue link color */
+        }
+    </style>
 </head>
 <body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
   <div id="content">
     <div id="banner" class="container clearfix">
       <nav aria-label="version" class="float-right">
@@ -30,7 +42,7 @@
         </ul>
       </nav>
       <a href="/">
-        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
+        <img id="logo" src="images/8675309-l-o-g-o-before.png" alt="This is a logo saying Accessible University" />
       </a>
     </div>
 
@@ -228,6 +240,8 @@
 
                 <h6>December 1</h6>
                 <h5><a href="#">A great holiday event</a></h4>
+                   
+                      
 
                 <p>Don't miss this event.</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
@@ -320,6 +334,7 @@
   <div id="modalMask"></div>
 
   <div id="modalContent">
+    <div id="main-content">
     <div class="modalHeading">List of accessibility issues</div>
     <button type="button" id="modalXButton">x</button>
     <p>Note: This popup does not receive keyboard focus. The cursor continues to tab down the page behind the it. As a result keyboard-only users cannot dismiss it and screen reader users will not be alerted to it's presence. They will not be able to close it; rendering the webpage useless.</p>
